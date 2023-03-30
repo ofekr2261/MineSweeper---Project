@@ -311,7 +311,7 @@ function safeClicked(elBtn) {
     gBoard[rndPos.i][rndPos.j].isShown = false;
     renderBoard(gBoard);
   }, 2000);
-  isCellFound = true;
+  var isCellFound = true;
   if (gGame.SAFES === 0) {
     // elBtn.style.background = 'lightcoral';
     elBtn.style.cursor = 'not-allowed';
@@ -488,3 +488,4 @@ function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
