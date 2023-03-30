@@ -1,0 +1,323 @@
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  position: static;
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.toggleDarkMode {
+	box-shadow: 0px 10px 14px -7px #000000;
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:42px;
+	border:3px solid #000103;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:13px;
+	font-style:italic;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.toggleDarkMode:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.toggleDarkMode:active {
+	position:relative;
+	top:1px;
+}
+
+.copyrights {
+  color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background:white;
+}
+
+.stats * {
+  margin-bottom: 0;
+}
+
+.stats h1 {
+  margin-top: 0;
+}
+
+.stats h5 {
+  position: relative;
+    bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.stats .lives {
+  font-size: 2em;
+  color: tomato;
+}
+
+.stats .smile {
+  cursor: pointer;
+  font-size: 2.5em;
+  position: relative;
+  bottom: 25px;
+}
+
+.hints img {
+  width: 50px;
+  height: 50px;
+  cursor: help;
+  opacity: 0.7;
+  margin: 15px;
+}
+
+
+.levels button {
+  cursor: pointer;
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  border-radius: 15%;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.beginner {
+  box-shadow: inset 0px 0px 21px 11px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 12px;
+  border: 4px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 0px 25px #283966;
+}
+.beginner:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.beginner:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.medium {
+  box-shadow: inset 0px 0px 21px 11px #e81919;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 12px;
+  border: 4px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 0px 25px #ff0000;
+}
+.medium:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.medium:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.expert {
+  box-shadow: inset 0px 0px 12px 5px #000000;
+  background: linear-gradient(to bottom, #e3ede1 5%, #1c1202 100%);
+  background-color: #e3ede1;
+  border-radius: 12px;
+  border: 1px solid #030200;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 50px #000000;
+}
+.expert:hover {
+  background: linear-gradient(to bottom, #1c1202 5%, #e3ede1 100%);
+  background-color: #1c1202;
+}
+.expert:active {
+  position: relative;
+  top: 1px;
+}
+
+
+
+/* .levels button {
+	box-shadow:inset 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:12px;
+	border:3px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:19px;
+	font-weight:bold;
+	padding:10px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.levels button:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.levels button:active {
+	position:relative;
+	top:1px;
+} */
+
+
+.help .safe {
+  background: #b034d9;
+  background-image: -webkit-linear-gradient(top, #b034d9, #2980b9);
+  background-image: -moz-linear-gradient(top, #b034d9, #2980b9);
+  background-image: -ms-linear-gradient(top, #b034d9, #2980b9);
+  background-image: -o-linear-gradient(top, #b034d9, #2980b9);
+  background-image: linear-gradient(to bottom, #b034d9, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration:#283966;
+  cursor: pointer;
+  
+}
+
+.undo {
+  width: 50px;
+  background: #34d4d9;
+  /* background-image: -webkit-linear-gradient(top, #b034d9, #2980b9); */
+  /* background-image: -moz-linear-gradient(top, #b034d9, #2980b9); */
+  /* background-image: -ms-linear-gradient(top, #b034d9, #2980b9); */
+  /* background-image: -o-linear-gradient(top, #b034d9, #2980b9); */
+  /* background-image: linear-gradient(to bottom, #b034d9, #2980b9); */
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  /* text-decoration:#283966; */
+  cursor: pointer;
+}
+
+
+.help .manual {
+  border: dashed 1px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 10px;
+  width: 105px;
+  cursor: cell;
+  background-color: orange;
+}
+
+.help .manual:active {
+  transform: translateY(4px);
+}
+
+.board {
+  display: inline-block;
+  width: 100%;
+}
+
+.board table {
+  margin: -50px;
+  background: #c0c0c0;
+  border: 4px solid black;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.cell {
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  outline: none;
+  background-size: 500%;
+  cursor: pointer;
+}
+
+td.cell:hover {
+  background: #e2e0e0;
+}
+
+.shown {
+  background: #8b8b8b;
+}
+
+/* classes for numbers */
+
+.one {
+  color: blue;
+}
+
+.two {
+  color: green;
+}
+
+.three {
+  color: red;
+}
+
+.four {
+  color: purple;
+}
+
+.five {
+  color: brown;
+}
+
+.six {
+  color: turquoise;
+}
+
+.seven {
+  color: black;
+}
+
+.eight {
+  color: lightgray;
+}

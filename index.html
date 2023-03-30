@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body onload="initGame()">
+    <div class="stats">
+      <h1 class="timer">Click a tile to start</h1>
+      <h3 class="flags">Good luck!</h3>
+      <h4 class="lives">❤ ❤ ❤</h4>
+      <h4 class="smile" onclick="forceReset()">😄</h4>
+      <h5 class="highscore">No highscore set</h5>
+    </div>
+    <div class="hints">
+      <img src="img/off.png" onclick="clickedHint(this)" />
+      <img src="img/off.png" onclick="clickedHint(this)" />
+      <img src="img/off.png" onclick="clickedHint(this)" />
+    </div>
+    <div class="levels">
+      <button class="beginner" onclick="setLevel(this)">Beginner</button>
+      <button class="medium" onclick="setLevel(this)">Medium</button>
+      <button class="expert" onclick="setLevel(this)">Expert</button>
+    </div>
+    <div class="help">
+      <button class="safe" onclick="safeClicked(this)">3 Safe clicks</button>
+      <button class="manual" onclick="setManual(this)">Manual Mode</button>
+      <button class="undo" onclick="undoMove()">🔙</button>
+      <button class="toggleDarkMode" onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+    <div class="board"></div>
+    <script src="js/utils.js"></script>
+    <script src="js/renders.js"></script>
+    <script src="js/app.js"></script>
+    <div class="copyrights">copyrights Ofek-Rashti 2023©</div>
+  </body>
+</html>
